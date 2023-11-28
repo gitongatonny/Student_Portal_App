@@ -61,30 +61,31 @@ public class GenerateReportsActivity extends AppCompatActivity {
 
         // Partial Missing Marks Btn
         Button partialMissingMarksBtn = findViewById(R.id.partialMissingMarksBtn);
-        specialCasesBtn.setOnClickListener(new View.OnClickListener() {
+        partialMissingMarksBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(GenerateReportsActivity.this, PartialMissingMarksActivity.class));
             }
         });
 
-        // Full Missing Marks Btn
+// Full Missing Marks Btn
         Button fullMissingMarksBtn = findViewById(R.id.fullMissingMarksBtn);
-        specialCasesBtn.setOnClickListener(new View.OnClickListener() {
+        fullMissingMarksBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(GenerateReportsActivity.this, fullMissingMarksActivity.class));
             }
         });
 
-        // Retake Btn
+// Retake Btn
         Button retakeBtn = findViewById(R.id.retakeBtn);
-        specialCasesBtn.setOnClickListener(new View.OnClickListener() {
+        retakeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(GenerateReportsActivity.this, retakeActivity.class));
             }
         });
+
 
     }
 }
