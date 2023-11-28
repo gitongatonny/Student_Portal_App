@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "393112266546",
+    "project_id": "dekut-student-portal",
+    "storage_bucket": "dekut-student-portal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393112266546:android:7d73e53637b801d0bc192b",
+        "android_client_info": {
+          "package_name": "com.app.dekutstudentportal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABlJsXTuCKISJMLsfms-envZhHiC0GKMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

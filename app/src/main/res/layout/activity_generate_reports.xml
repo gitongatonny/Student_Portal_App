@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/generateReportsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Generate Reports"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Report Buttons -->
+
+    <!-- Pass All Courses in a Sem Btn -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/passAllCoursesSemesterBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Pass All Courses in a Semester"
+        android:textColor="#000000"
+        app:backgroundTint="#CDDC39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/generateReportsTitle"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Pass All Courses in a Year Btn -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/passAllCoursesYearBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Pass All Courses in a Year"
+        android:textColor="#000000"
+        app:backgroundTint="#CDDC39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passAllCoursesSemesterBtn"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Failed Courses in a Sem Btn -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/failCoursesSemesterBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Failed Courses in a Semester"
+        android:textColor="#000000"
+        app:backgroundTint="#CDDC39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passAllCoursesYearBtn"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Failed Courses in a Year Btn -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/failCoursesYearBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Failed Courses in a Year"
+        android:textColor="#000000"
+        app:backgroundTint="#CDDC39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/failCoursesSemesterBtn"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Special Cases Btn -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/specialCasesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Special Cases"
+        android:textColor="#000000"
+        app:backgroundTint="#CDDC39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/failCoursesYearBtn"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Partial Missing Marks Btn -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/partialMissingMarksBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Partial Missing Marks"
+        android:textColor="#000000"
+        app:backgroundTint="#CDDC39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/specialCasesBtn"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Full Missing Marks Btn -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fullMissingMarksBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Full Missing Marks"
+        android:textColor="#000000"
+        app:backgroundTint="#CDDC39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/partialMissingMarksBtn"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Retake Btn -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/retakeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Retake"
+        android:textColor="#000000"
+        app:backgroundTint="#CDDC39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fullMissingMarksBtn"
+        android:layout_marginEnd="16dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

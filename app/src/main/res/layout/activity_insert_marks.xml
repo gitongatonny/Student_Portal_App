@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/insertMarksTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert/View Student's Marks"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <!-- Student Name -->
+    <TextView
+        android:id="@+id/studentNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Name: "
+        android:textSize="18sp"
+        android:layout_below="@id/insertMarksTitle"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Student Reg -->
+    <TextView
+        android:id="@+id/studentRegTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reg Number: "
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@id/studentNameTextView"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Assignment 1 -->
+    <TextView
+        android:id="@+id/assignment1Label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assignment 1:"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/studentRegTextView"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/assignment1EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Assignment 1"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/assignment1Label"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Assignment 2 -->
+    <TextView
+        android:id="@+id/assignment2Label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assignment 2:"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/assignment1EditText"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/assignment2EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Assignment 2"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/assignment2Label"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <!-- CAT 1 -->
+    <TextView
+        android:id="@+id/cat1Label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CAT 1:"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/assignment2EditText"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/cat1EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter CAT 1"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@id/cat1Label"
+        android:layout_marginTop="8dp"/>
+
+    <!-- CAT 2 -->
+    <TextView
+        android:id="@+id/cat2Label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CAT 2:"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/cat1EditText"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/cat2EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter CAT 2"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@id/cat2Label"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Exam Score -->
+    <TextView
+        android:id="@+id/examScoreLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exam Score:"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/cat2EditText"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/examScoreEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Exam Score"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@id/examScoreLabel"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Overall Score -->
+    <TextView
+        android:id="@+id/overallScoreLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Overall Score:"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/examScoreEditText"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/overallScoreEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Overall Score"
+        android:inputType="none"
+        android:maxLength="3"
+        android:maxLines="1"
+        android:enabled="false"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@id/overallScoreLabel"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Grade -->
+    <TextView
+        android:id="@+id/gradeLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grade:"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/overallScoreEditText"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/gradeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Grade"
+        android:inputType="none"
+        android:enabled="false"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@id/gradeLabel"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Save Btn -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveMarksButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Marks"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_below="@id/gradeEditText"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#CDDC39"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

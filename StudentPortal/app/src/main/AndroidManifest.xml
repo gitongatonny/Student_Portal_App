@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DeKUTStudentPortal"
+        tools:targetApi="31">
+        <activity
+            android:name=".EditMarksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GenerateReportsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminFunctionalitiesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewMarksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InsertMarksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SelectStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentUnitSelection"
+            android:exported="false" />
+        <activity
+            android:name=".StudentPortalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LecPortalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPortalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentLandingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LecLandingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LecRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LecLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

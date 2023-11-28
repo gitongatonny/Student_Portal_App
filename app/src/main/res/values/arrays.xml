@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender_array">male, female</string-array>
+    <array name="course_names">
+        <item>Data Structures and Algorithms</item>
+        <item>Design and Analysis of Algorithms</item>
+        <item>Theory of Computation</item>
+        <item>Compiler Construction</item>
+        <item>Computer Networks</item>
+        <item>Internet Applications Programming</item>
+        <item>Mobile Applications Programming</item>
+        <item>Object Oriented Programming</item>
+        <item>Artificial Intelligence</item>
+        <item>Machine Learning</item>
+    </array>
+</resources>

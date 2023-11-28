@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/adminWelcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Admin Portal"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- User Email -->
+    <TextView
+        android:id="@+id/adminEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Email: admin@dkut.ac.ke"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/adminWelcomeText"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Admin Functionalities Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/adminFunctionalitiesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/adminEmail"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#CDDC39"
+        android:text="Admin Functionalities"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/adminEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Admin Logout Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/adminLogoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/adminFunctionalitiesBtn"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#CDDC39"
+        android:text="Admin Logout"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/adminFunctionalitiesBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

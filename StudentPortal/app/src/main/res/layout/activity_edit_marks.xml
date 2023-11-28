@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Student Name Dropdown -->
+    <Spinner
+        android:id="@+id/spinnerStudentNames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Assignment 1 -->
+    <EditText
+        android:id="@+id/editTextAssignment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Assignment 1"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/spinnerStudentNames"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Assignment 2 -->
+    <EditText
+        android:id="@+id/editTextAssignment2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Assignment 2"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/editTextAssignment1"
+        android:layout_marginTop="16dp"/>
+
+    <!-- CAT 1 -->
+    <EditText
+        android:id="@+id/editTextCat1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CAT 1"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/editTextAssignment2"
+        android:layout_marginTop="16dp"/>
+
+    <!-- CAT 2 -->
+    <EditText
+        android:id="@+id/editTextCat2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CAT 2"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/editTextCat1"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Exam Score -->
+    <EditText
+        android:id="@+id/editTextExamScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Exam Score"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/editTextCat2"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@id/editTextExamScore"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>

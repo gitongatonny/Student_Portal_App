@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Marks Title -->
+    <TextView
+        android:id="@+id/insertMarksTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert Marks"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <!-- Student Name -->
+    <TextView
+        android:id="@+id/studentNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Name: "
+        android:textSize="18sp"
+        android:layout_below="@id/insertMarksTitle"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Assignment 1 -->
+    <EditText
+        android:id="@+id/assignment1EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Assignment 1"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/studentNameTextView"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Assignment 2 -->
+    <EditText
+        android:id="@+id/assignment2EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Assignment 2"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/assignment1EditText"
+        android:layout_marginTop="16dp"/>
+
+    <!-- CAT 1 -->
+    <EditText
+        android:id="@+id/cat1EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CAT 1"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/assignment2EditText"
+        android:layout_marginTop="16dp"/>
+
+    <!-- CAT 2 -->
+    <EditText
+        android:id="@+id/cat2EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CAT 2"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/cat1EditText"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Exam Score -->
+    <EditText
+        android:id="@+id/examScoreEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Exam Score"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/cat2EditText"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveMarksButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Marks"
+        android:layout_below="@id/examScoreEditText"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

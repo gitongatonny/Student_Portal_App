@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LecPortalActivity">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lecPortalWelcomeText"
+        android:text="Welcome to the Lecturer Portal"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_margin="50dp"
+        android:gravity="center"/>
+
+    <!-- Lec Details Table -->
+    <TableLayout
+        android:id="@+id/lecturerDetailsTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lecPortalWelcomeText"
+        android:layout_margin="20dp"
+        android:stretchColumns="*"
+        >
+
+        <!-- Dynamic Rows -->
+
+    </TableLayout>
+
+
+    <!-- Marks View -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lecPortalViewText"
+        android:layout_below="@id/lecturerDetailsTable"
+        android:text="Click the 'Student List' button below to enter and view the students' marks"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_margin="50dp"
+        android:gravity="center"/>
+
+    <!-- View Student List Btn -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/viewStudentListBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lecPortalViewText"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#CDDC39"
+        android:text="View Student List"
+        android:textColor="#000000"
+        android:layout_marginTop="5dp"/>
+
+
+    <!-- Lec Logout Btn -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/lecLogoutPortalBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewStudentListBtn"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#CDDC39"
+        android:text="Lecturer Logout"
+        android:textColor="#000000"
+        android:layout_marginTop="60dp"/>
+
+</RelativeLayout>
